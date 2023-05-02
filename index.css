@@ -1,0 +1,99 @@
+.container{
+    display:flex;  
+    align-items: center;
+    justify-content: center;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+#main{
+    width:max-width;
+    background-color:#bcefef;
+    height:100vh;
+    flex-direction: column;
+}
+
+#result{
+    position: fixed;
+    bottom: 10%;
+    display: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius:10px;
+    animation: change-color 2s infinite ease-in-out;
+}
+
+@keyframes change-color{
+    0%{
+        background-color:#8c43d5;
+    }
+    100%{
+        background-color:#fff;
+    }
+}
+
+
+
+
+#sub1{
+    width:50vh;
+    height:50vh;
+    background-color:rgb(140, 67, 213);
+    border-radius:5%;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+input[type="text"]{
+    border:none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color:white;
+    font-size: 1.2rem;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    margin:10px;
+}
+
+input[type="text"]::placeholder{
+    color:white;
+    font-size: 0.8rem;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    opacity: 0.8;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input:focus{
+    outline:none;
+}
+
+#go{
+    border:none;
+    border-radius: 10px;
+    padding:10px 20px;
+    margin:10px;
+    cursor: pointer;
+    background-color:rgb(219, 199, 237);
+}
+
+#go:hover{
+    background-color:rgb(140, 67, 213);
+    transition: 0.5s;
+    color: white;
+}
+
+#title{
+    position: absolute;
+    top: 10%;
+    font-family: 'Roboto', sans-serif;
+}
